@@ -6,7 +6,7 @@ function App() {
 
     return (
         <div className="wrapper">
-            <BrowserRouter>
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Routes>
                     <Route path="/" element={ <MainPage /> }/>
                 </Routes>
