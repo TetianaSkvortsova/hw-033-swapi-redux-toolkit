@@ -30,7 +30,11 @@ function List({fetchAction, resourceName}) {
             <ul>
                 {data.results.map(person => <li key={person.name}>{person.name}</li>)}
             </ul>
-            <button type="button" onClick={handleFetchMore}>Load more</button>
+            <button
+                type="button"
+                onClick={handleFetchMore}
+                disabled={!nextUrl}
+            >Load more</button>
         </div>
     );
 }

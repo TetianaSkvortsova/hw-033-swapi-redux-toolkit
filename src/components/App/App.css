@@ -20,6 +20,7 @@
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 191, 255, 0.1);
   min-height: 400px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -72,4 +73,14 @@
 h2.loading, p.loading{
   width: 250px;
   padding: 20px;
+  height: fit-content;
+}
+
+.list button:disabled {
+  cursor: not-allowed;
+  border-color: var(--starwars-light-gray);
+  color: var(--starwars-light-gray);
+  background-color: rgba(189, 189, 189, 0.1);
+  opacity: 0.6;
+  box-shadow: none;
 }
